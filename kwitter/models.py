@@ -23,3 +23,4 @@ def create_profile(sender, instance, created, **kwargs):
         user_profile.save()
         user_profile.follows.add(instance.profile)
         user_profile.save()
+
